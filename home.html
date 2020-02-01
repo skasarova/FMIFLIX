@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,114 @@
     <link rel="stylesheet" href="styles/home-page-styles.css">
     <title>FMIFlix</title>
 </head>
+
 <body>
-    <header>    
-        <a href="home.html/"><img src="https://fontmeme.com/permalink/200130/90e2a39627f841bbfbd38278bff11318.png" alt="netflix-font" border="0"></a>
+    <header>
+        <a href="home.html/"><img src="https://fontmeme.com/permalink/200130/90e2a39627f841bbfbd38278bff11318.png"
+                alt="netflix-font" border="0"></a>
         <input type="button" value="Sign In" class="sign-in">
     </header>
     <main>
-        <div class="popular">
-        <section class="popular-movie knives-out" id="movie-1">
-            <ul>
-                <li class="popular-movie-trailer">
-                    <iframe src="https://player.vimeo.com/video/347046189?loop=1&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </li>
-                <li class="popular-movie-info">
-                    <div class="movie-title">
-                        <h1>KNIVES</h1>
-                        <h1>OUT</h1>
-                    </div>
-                    <p>
-                        When renowned crime novelist Harlan Thrombey dies just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc arrives at his estate to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Thrombey's untimely demise.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="popular-movie world-war" id="movie-2">
-            <ul>
-                <li class="popular-movie-trailer">
-                    <iframe src="https://player.vimeo.com/video/149904542?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </li>
-                <li class="popular-movie-info">
-                    <div class="movie-title">
-                        <h1>1917</h1>
-                    </div>
-                    <p>
-                       add info here - change background!
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="popular-movie star-wars" id="movie-3">
-            <ul>
-                <li class="popular-movie-trailer">
-                    <iframe src="https://player.vimeo.com/video/332575299?color=2caae2&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-                </li>
-                <li class="popular-movie-info">
-                    <div class="movie-title">
-                        <h1>STAR</h1>
-                        <h1>WARS</h1>
-                    </div>
-                    <p>
-                        add info here - change background!
-                    </p>
-                </li>
-            </ul>
-        </section>
+        <div class="main-movie">
+            <video src="videos/ocean-twelve-ending.mp4" width="100%" height="600px" autoplay="true" muted = "true"> 
+            </video>
+            <section class="overlay">
+                <img src="images/oceans-twelve.png" alt="">
+            </section>
         </div>
-        
-        
-    </main>
-    <div class="nav">
-        <a class="link" href="#movie-1"></a>
-        <a class="link" href="#movie-2"></a>
-        <a class="link" href="#movie-3"></a>
-    </div>
-    
-    <footer>
 
-    </footer>
+        <div id="homepage-slider" class="st-slider">
+
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+            <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="" />
+
+            <div class="images">
+                <div class="images-inner">
+                    <section class="popular-movie knives-out" id="movie-1">
+                        <ul>
+                            <li class="popular-movie-trailer">
+                                <video src="videos/1480789110.mp4" width="850" height="506" controls
+                                    poster="images/knives-out-thumbnail.jpg"></video>
+                            </li>
+                            <li class="popular-movie-info">
+                                <div class="movie-title">
+                                    <h1>KNIVES</h1>
+                                    <h1>OUT</h1>
+                                </div>
+                                <p>
+                                    When renowned crime novelist Harlan Thrombey dies just after his 85th birthday, the
+                                    inquisitive and debonair Detective Benoit Blanc arrives at his estate to
+                                    investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts
+                                    through a web of red herrings and self-serving lies to uncover the truth behind
+                                    Thrombey's untimely demise.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="popular-movie world-war" id="movie-2">
+                        <ul>
+                            <li class="popular-movie-trailer">
+                                <video width="900" height="506" controls preload="metadata" poster="images/1917.jpg">
+                                    <source src="videos/1917.mp4" type="video/mp4">
+                                </video>
+                            </li>
+                            <li class="popular-movie-info">
+                                <div class="movie-title">
+                                    <h1>1917</h1>
+                                </div>
+                                <p>
+                                    During World War I, two British soldiers -- Lance Cpl. Schofield and Lance Cpl.
+                                    Blake -- receive seemingly impossible orders. In a race against time, they must
+                                    cross over into enemy territory to deliver a message that could potentially save
+                                    1,600 of their fellow comrades -- including Blake's own brother.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="popular-movie star-wars" id="movie-3">
+                        <ul>
+                            <li class="popular-movie-trailer">
+                                <video src="videos/star-wars.mp4" width="900" height="506" controls
+                                    poster="images/star-wars-thumbnail.jpg"></video>
+                            </li>
+                            <li class="popular-movie-info">
+                                <div class="movie-title">
+                                    <h1>STAR</h1>
+                                    <h1>WARS</h1>
+                                </div>
+                                <p>
+                                    When it's discovered that the evil Emperor Palpatine did not die at the hands of
+                                    Darth Vader, the rebels must race against the clock to find out his whereabouts.
+                                    Finn and Poe lead the Resistance to put a stop to the First Order's plans to form a
+                                    new Empire, while Rey anticipates her inevitable confrontation with Kylo Ren.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="labels">
+                <div class="fake-radio">
+                    <label for="slide1" class="radio-btn"></label>
+                    <label for="slide2" class="radio-btn"></label>
+                    <label for="slide3" class="radio-btn"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="trending">
+            <ul>
+                <li><img src="" alt=""></li>
+            </ul>
+        </section>
+
+        <footer>
+
+        </footer>
 </body>
+
 </html>

@@ -1,0 +1,80 @@
+/* Calculate AUTOPLAY for BULLETS */
+@keyframes bullet {
+
+    0%,
+    33.32333333333334% {
+        background: red;
+    }
+
+    33.333333333333336%,
+    100% {
+        background: gray;
+    }
+}
+
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(1) {
+    animation: bullet 12300ms infinite -1000ms;
+}
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(2) {
+    animation: bullet 12300ms infinite 3100ms;
+}
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(3) {
+    animation: bullet 12300ms infinite 7200ms;
+}
+
+
+/* Calculate AUTOPLAY for SLIDES */
+@keyframes slide {
+
+    0%,
+    25.203252032520325% {
+        margin-left: 0;
+    }
+
+    33.333333333333336%,
+    58.53658536585366% {
+        margin-left: -100%;
+    }
+
+    66.66666666666667%,
+    91.869918699187% {
+        margin-left: -200%;
+    }
+}
+
+
+.st-slider>#play1:checked~.images .images-inner {
+    animation: slide 12300ms infinite;
+}
+
+
+
+/* Calculate AUTOPLAY for CAPTION */
+@keyframes caption {
+
+    0%,
+    33.32333333333334% {
+        opacity: 1;
+    }
+
+    33.333333333333336%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#play1:checked~.labels .label:nth-child(1) {
+    animation: caption 12300ms infinite -1000ms;
+}
+
+#play1:checked~.labels .label:nth-child(2) {
+    animation: caption 12300ms infinite 3100ms;
+}
+
+#play1:checked~.labels .label:nth-child(3) {
+    animation: caption 12300ms infinite 7200ms;
+}
