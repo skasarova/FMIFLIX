@@ -2,8 +2,6 @@
 @import 'carousel-slide.css';
 @import 'variables.css';
 
-
-
 html {
     box-sizing: border-box;
     background-color: var(--background-black);
@@ -20,11 +18,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-
-}
-
 ul {
     list-style: none;
 }
@@ -34,51 +27,9 @@ a {
     color: inherit;
 }
 
-/* Styling the header */
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em 3em 0.5em 3em;
-    background-color: var(--background-black);
-    width: 100%;
-    top: 0;
-    position: fixed;
-}
-
-header a {
-    color: var(--main-red);
-    font-size: 2em;
-    font-weight: 900;
-    padding-top: 0.3em;
-}
-
-
-.sign-in {
-    margin: 1.2em 0 1.2em 0;
-    padding: 0em 0.9em 0em 0.9em;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    background-color: var(--main-red);
-    font-size: 1em;
-}
-
-.sign-in:hover {
-    background-color: var(--lighter-red);
-    cursor: pointer;
-}
-
-/* Main - popular movies */
-
-main {
-    margin-top: 102px;
-}
-
-
 video[poster] {
     object-fit: fill;
+    width: 100%;
 }
 
 video {
@@ -89,7 +40,7 @@ video {
 
 .overlay {
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 400px;
     height: 155px;
