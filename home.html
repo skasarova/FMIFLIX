@@ -7,21 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/home-page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://fontmeme.com/permalink/200202/28dcbb06cfbdb72a7805a73758812d2e.png">
     <title>FMIFlix</title>
+
+    <script>
+        function unmute() {
+            let audio = document.getElementById('troy-video');
+            let muteButton = document.getElementById('mute-button');
+
+            if (audio.mute) {
+                audio.mute = false;
+                document.getElementById('troy-video').muted = false;
+                toggleBetweenClasses(muteButton, "fa-volume-off", "fa-volume-up");
+            } else {
+                audio.mute = true;
+                document.getElementById('troy-video').muted = true;
+                toggleBetweenClasses(muteButton, "fa-volume-up", "fa-volume-off");
+            }
+        }
+
+
+        function toggleBetweenClasses(el, c1, c2) {
+            el.classList.toggle(c1);
+            el.classList.toggle(c2);
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        <a href="home.html/"><img src="https://fontmeme.com/permalink/200130/90e2a39627f841bbfbd38278bff11318.png"
-                                                                            alt="netflix-font" border="0"></a>
-        <input type="button" value="Sign In" class="sign-in">
+        <a href="home.html"><img src="https://fontmeme.com/permalink/200130/90e2a39627f841bbfbd38278bff11318.png"
+                alt="netflix-font" border="0"></a>
+        <button onclick="window.location.href = 'login.html'" class="sign-in">Sign In</button>
     </header>
     <main>
         <div class="main-movie">
-            <video src="videos/ocean-twelve-ending.mp4" width="100%" height="600px" autoplay="true" muted = "true"> 
+            <video id="troy-video" src="videos/troy.mp4" width="100%" height="800px" loop autoplay="true" muted="true">
             </video>
-            <section class="overlay">
-                <img src="images/oceans-twelve.png" alt="">
+            <section class="overlay logo">
+                <img src="images/troy.png" alt="">
+            </section>
+            <section class="overlay mute" onclick="unmute()">
+                <i id="mute-button" class="fa fa-volume-off fa-2x"></i>
             </section>
         </div>
 
@@ -109,9 +137,21 @@
 
 
         <section class="trending">
-            <ul>
-                <li><img src="" alt=""></li>
+            <ul class="movie-scroll">
+                
+                <li><img src="images/movie-previews/trending/dolittle.png" alt=""></li>
+                <li><img src="images/movie-previews/trending/bad-boys.jpeg" alt=""></li>
+                <li><img src="images/movie-previews/trending/jumanji.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/frozen.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/fast-and-furious.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/avengers.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/little-women.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/the-gentlemen.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/top-gun.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/black-widow.png" alt=""></li>
             </ul>
+            <div class="left arrow"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></i></div>
+            <div class="right arrow"><i class="fa fa-arrow-right fa-2x"></i></div>
         </section>
 
         <footer>
