@@ -34,6 +34,7 @@
             el.classList.toggle(c1);
             el.classList.toggle(c2);
         }
+
     </script>
 </head>
 
@@ -45,7 +46,7 @@
     </header>
     <main>
         <div class="main-movie">
-            <video id="troy-video" src="videos/troy.mp4" width="100%" height="800px" loop autoplay="true" muted="true">
+            <video id="troy-video" src="videos/troy.mp4" width="100%" height="820px" loop autoplay="true" muted="true">
             </video>
             <section class="overlay logo">
                 <img src="images/troy.png" alt="">
@@ -54,6 +55,38 @@
                 <i id="mute-button" class="fa fa-volume-off fa-2x"></i>
             </section>
         </div>
+
+        <section class="movie-list trending">
+            <h2>Trending Now</h2>
+            <ul class="movie-scroll">
+                <li><img src="images/movie-previews/trending/dolittle.png" alt=""></li>
+                <li><img src="images/movie-previews/trending/bad-boys.jpeg" alt=""></li>
+                <li><img src="images/movie-previews/trending/jumanji.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/frozen.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/fast-and-furious.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/avengers.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/little-women.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/the-gentlemen.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/top-gun.jpg" alt=""></li>
+                <li><img src="images/movie-previews/trending/black-widow.png" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="movie-list old-but-gold">
+            <h2>All Time Classics</h2>
+            <ul class="movie-scroll">
+                <li><img src="images/movie-previews/old-but-gold/godfather.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/heat.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/pearl-harbor.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/pianist.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/shaw-redempsh.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/titanic.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/devil-advocate.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/batman.jpg" alt=""></li>
+                <li><img src="images/movie-previews/old-but-gold/scarface.jpg" alt=""></li>
+            </ul>
+        </section>
+
 
         <div id="homepage-slider" class="st-slider">
 
@@ -137,29 +170,45 @@
             </div>
         </div>
 
-
-        <section class="trending">
+        <section class="movie-list best-movies">
+            <h2>Best Movies 2010-2020</h2>
             <ul class="movie-scroll">
-                
-                <li><img src="images/movie-previews/trending/dolittle.png" alt=""></li>
-                <li><img src="images/movie-previews/trending/bad-boys.jpeg" alt=""></li>
-                <li><img src="images/movie-previews/trending/jumanji.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/frozen.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/fast-and-furious.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/avengers.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/little-women.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/the-gentlemen.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/top-gun.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/black-widow.png" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/django.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/slave.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/murder-orient.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/fallout.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/bohemian.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/boyhood.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/hobbit.png" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/gravity.jpg" alt=""></li>
+                <li><img src="images/movie-previews/best-movies/interstellar.jpg" alt=""></li>
             </ul>
-            <div class="left arrow"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></i></div>
-            <div class="right arrow"><i class="fa fa-arrow-right fa-2x"></i></div>
+        </section>
+
+        <section class="movie-list comedy">
+            <h2>Comedy</h2>
+            <ul class="movie-scroll">
+                <li><img src="images/movie-previews/comedy/dictator.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/grown-ups.jpeg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/go-with-it.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/hangover.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/millers.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/rush-hour.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/shrek.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/ocean.jpg" alt=""></li>
+                <li><img src="images/movie-previews/comedy/mamma-mia.jpg" alt=""></li>
+            </ul>
         </section>
 
         <footer>
-
+            <ul>
+                <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+            </ul>
+            <p>&copy; 2020 FMIFlix Inc.| Kalin Tomanov, Sanya Kasarova</p>
         </footer>
     </main>
 </body>
-
 </html>
