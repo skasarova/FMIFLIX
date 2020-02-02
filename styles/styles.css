@@ -34,3 +34,12 @@ header a {
     background-color: var(--lighter-red);
     cursor: pointer;
 }
+
+.fa-user{
+    color: var(--main-red);
+    margin: 22px auto;
+    font-size: 35px !important;
+    cursor: pointer;
+    position: absolute;
+    right: 170px;
+}

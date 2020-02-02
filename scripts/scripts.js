@@ -20,3 +20,16 @@ function setCookie(key, value){
 function getCookie(key){
     return window.localStorage.getItem(key);
 }
+
+function clearCookie(key){
+    window.localStorage.removeItem(key);
+}
+
+function redirect(page){
+    window.location.href = window.location.origin + "/FMIFLIX/" + page;
+}
+
+function onLogout(){
+    clearCookie('user');
+    location.reload();
+}
