@@ -3,6 +3,13 @@ window.onload = function () {
 };
 
 function init() {
+    let user = JSON.parse(getCookie('user'));
+
+    if(user){
+        redirect("home.html");
+        return;
+    }
+
     let form = document.getElementById("login-form");
     form.addEventListener("submit", handleLogin);
 }
@@ -66,8 +73,12 @@ function handleData(resp) {
         if(users.hasOwnProperty(email.value)){
             if(password.value === users[email.value].password){
                 errDiv.innerText = "";
-                window.location.replace("home.html");
-                setCookie('user', users[email.value]);
+                redirect("home.html");
+
+                var user = users[email.value];
+                user.email = email.value;
+
+                setCookie('user', user);
             }
             else{
                 errDiv.innerText = "Wrong username or password!";
