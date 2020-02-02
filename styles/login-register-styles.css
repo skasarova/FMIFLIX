@@ -51,6 +51,7 @@ textarea:focus, input:focus{
     background-color: #333;
     border:none;
     color: #f0f0f0;
+    width: 90%;
 }
 
 .login-form-error{
@@ -84,4 +85,9 @@ textarea:focus, input:focus{
 .remember-me{
     color: #f0f0f0;
     margin-top: -25px;
+}
+
+#login-form-wrong-login{
+    padding-top: 30px;
+    color: rgba(255, 130, 0, 0.91);
 }
