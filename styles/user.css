@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import 'carousel-slide.css';
+@import 'variables.css';
+
+html, body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: var(--background-black);
+}
+
+.user {
+    margin-top: 95.59px;
+    padding: 100px 300px 100px 100px;
+}
+
+.user-container {
+    height: 500px;
+}
+
+.user-email{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.user-row{
+    margin-bottom: 20px;
+}
+
+.user-label{
+    font-size: 20px;
+    color: var(--lighter-red);
+    display: inline-block;
+    width: 120px;
+}
+
+.user-value{
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+}
