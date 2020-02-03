@@ -42,30 +42,28 @@ video {
     position: absolute;
 }
 
-.logo{
+.logo {
     bottom: 18%;
     left: 3%;
     width: 300px;
     height: 115px;
 }
 
-.mute{
+.mute {
     border: 1px solid white;
     border-radius: 50%;
-    bottom: 20%;
+    bottom: 21%;
     right: 5%;
     width: 50px;
     height: 50px;
     padding: 7.5px;
-    
 }
 
-
-.mute:hover{
+.mute:hover {
     cursor: pointer;
 }
 
-.mute i{
+.mute i {
     color: white;
 }
 
@@ -229,57 +227,129 @@ video {
 
 /*  The movie scrolls */
 
-.trending{
+.movie-list {
     width: 100%;
     height: 300px;
-    position: relative;
+    color: rgb(253, 253, 253);
+    margin-bottom: 150px;
 }
 
-.movie-scroll{
-    overflow:auto;
+.movie-list h2 {
+    padding: 5px;
+}
+
+.movie-scroll {
+    overflow: auto;
     white-space: nowrap;
     box-sizing: border-box;
-	
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
-	
-    
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
-.movie-scroll li{
-    width: 200px;
-    height: 250px;
+
+.movie-scroll li {
+    box-sizing: border-box;
+    z-index: 1;
     display: inline-block;
-    
+    position: relative;
+    white-space: normal;
+    vertical-align: top;
+    padding: 0 2px;
+    width: 300px;
+    height: 330px;
 }
 
-.movie-scroll li img{
+
+.movie-scroll li img {
     width: 100%;
-    height:100%;
-}
-
-.arrow{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.404);
-    color: rgb(218, 218, 218);
-    width: 50px;
     height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    z-index: 2;
 }
 
-.arrow i{
-    margin-top: 110px;
+.movie-scroll::-webkit-scrollbar {
+    width: 40%;
+    height: 10px;
 }
 
-.left{
+.movie-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.315);
+    outline: 1px solid slategrey;
+}
+
+
+/* Footer styling */
+
+footer {
+    color: rgb(128, 128, 128);
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer p {
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+/* Making the movies bigger on hover */
+
+.movie video{
+    visibility: hidden;
+}
+
+.movie img{
+    transition: 0s visibility;
+}
+
+.movie video{
+    transition: 0s visibility;
+}
+
+.movie{
+    transition: 0s -webkit-transform;
+    transition: 0s margin;
+}
+
+.movie:hover{
+    margin: 20px 100px 100px 100px;
+    transition-delay: 2s;
+}
+
+.movie:hover{
+    -webkit-transform: scale(1.5); 
+    -webkit-transition: transform 1.05s ease-in-out;
+    width: 430px;
+}
+
+
+.movie:hover img {
+    overflow: hidden;
+    visibility: hidden;
+    transition-delay: 1.5s;
+}
+
+.movie:hover video {
+    visibility: visible;
+    transition-delay: 1.5s;
+}
+
+
+
+.movie video {
+    position: absolute;
     top: 0;
-	bottom: 0;
-}
-
-.right{
-    top: 0;
-    right:0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;  
+    object-fit: fill;
 }
