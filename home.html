@@ -14,6 +14,7 @@
     <title>FMIFlix</title>
 
     <script>
+        // Mute/Unmute button:
         function unmute() {
             let audio = document.getElementById('troy-video');
             let muteButton = document.getElementById('mute-button');
@@ -29,12 +30,10 @@
             }
         }
 
-
         function toggleBetweenClasses(el, c1, c2) {
             el.classList.toggle(c1);
             el.classList.toggle(c2);
         }
-
     </script>
 </head>
 
@@ -58,31 +57,40 @@
         <section class="movie-list trending">
             <h2>Trending Now</h2>
             <ul class="movie-scroll">
-                <li><img src="images/movie-previews/trending/dolittle.png" alt=""></li>
-                <li><img src="images/movie-previews/trending/bad-boys.jpeg" alt=""></li>
-                <li><img src="images/movie-previews/trending/jumanji.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/frozen.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/fast-and-furious.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/avengers.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/little-women.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/the-gentlemen.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/top-gun.jpg" alt=""></li>
-                <li><img src="images/movie-previews/trending/black-widow.png" alt=""></li>
+                <li class="movie">
+                    <img src="images/movie-previews/trending/dolittle.jpg" alt="">
+                    <video src="videos/trailer/dolittle.mp4" width="230" height="280" controls></video>
+                </li>
+                <li class="movie">
+                    <img src="images/movie-previews/trending/bad-boys.jpeg" alt="">
+                    <video src="videos/trailer/bad-boys.mp4" width="230" height="280" controls></video>
+                </li>
+                <li class="movie">
+                    <img src="images/movie-previews/trending/jumanji.jpg" alt="">
+                    <video src="videos/trailer/jumanji.mp4" width="230" height="280" controls></video>
+                </li>
+                <li class="movie"><img src="images/movie-previews/trending/frozen.png" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/fast-and-furious.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/avengers.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/little-women.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/the-gentlemen.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/top-gun.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/trending/black-widow.png" alt=""></li>
             </ul>
         </section>
 
         <section class="movie-list old-but-gold">
             <h2>All Time Classics</h2>
             <ul class="movie-scroll">
-                <li><img src="images/movie-previews/old-but-gold/godfather.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/heat.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/pearl-harbor.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/pianist.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/shaw-redempsh.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/titanic.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/devil-advocate.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/batman.jpg" alt=""></li>
-                <li><img src="images/movie-previews/old-but-gold/scarface.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/godfather.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/heat.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/pearl-harbor.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/pianist.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/shaw-redempsh.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/titanic.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/devil-advocate.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/batman.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/old-but-gold/scarface.jpg" alt=""></li>
             </ul>
         </section>
 
@@ -172,30 +180,38 @@
         <section class="movie-list best-movies">
             <h2>Best Movies 2010-2020</h2>
             <ul class="movie-scroll">
-                <li><img src="images/movie-previews/best-movies/django.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/slave.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/murder-orient.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/fallout.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/bohemian.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/boyhood.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/hobbit.png" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/gravity.jpg" alt=""></li>
-                <li><img src="images/movie-previews/best-movies/interstellar.jpg" alt=""></li>
+                <li class="movie">
+                    <img src="images/movie-previews/best-movies/django.jpg" alt="">
+                    <video src="videos/" width="230" height="280" controls
+                        poster="images/knives-out-thumbnail.jpg"></video>
+                </li>
+                <li class="movie">
+                    <img src="images/movie-previews/best-movies/slave.jpg" alt="">
+                    <video src="videos/" width="230" height="280" controls
+                        poster="images/knives-out-thumbnail.jpg"></video>
+                </li>
+                <li class="movie"><img src="images/movie-previews/best-movies/murder-orient.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/fallout.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/bohemian.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/boyhood.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/hobbit.png" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/gravity.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/best-movies/interstellar.jpg" alt=""></li>
             </ul>
         </section>
 
         <section class="movie-list comedy">
             <h2>Comedy</h2>
             <ul class="movie-scroll">
-                <li><img src="images/movie-previews/comedy/dictator.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/grown-ups.jpeg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/go-with-it.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/hangover.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/millers.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/rush-hour.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/shrek.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/ocean.jpg" alt=""></li>
-                <li><img src="images/movie-previews/comedy/mamma-mia.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/dictator.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/grown-ups.jpeg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/go-with-it.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/hangover.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/millers.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/rush-hour.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/shrek.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/ocean.jpg" alt=""></li>
+                <li class="movie"><img src="images/movie-previews/comedy/mamma-mia.jpg" alt=""></li>
             </ul>
         </section>
 
@@ -210,4 +226,5 @@
         </footer>
     </main>
 </body>
+
 </html>
