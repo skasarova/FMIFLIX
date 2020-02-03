@@ -1,0 +1,15 @@
+@media only screen and (max-width: 500px) {
+    .register-container{
+        width: 300px !important;
+        padding: 0;
+    }
+
+    .login-form-field, .login-form-btn-container{
+        width: 300px !important;
+    }
+
+    #register-form{
+        width: 300px !important;
+        margin: 0 auto;
+    }
+}
