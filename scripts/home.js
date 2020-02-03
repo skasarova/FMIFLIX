@@ -1,5 +1,6 @@
 window.onload = function () {
     init();
+    document.getElementById("mute").onclick = handleMute;
 };
 
 function init(){
@@ -35,4 +36,22 @@ function checkUser(){
 
         login.onclick = () => redirect("login.html");
     }
+}
+
+function handleMute() {
+    let audio = document.getElementById('troy-video');
+    let muteButton = document.getElementById('mute-button');
+
+    if (audio.muted) {
+        audio.muted = false;
+        toggleBetweenClasses(muteButton, "fa-volume-off", "fa-volume-up");
+    } else {
+        audio.muted = true;
+        toggleBetweenClasses(muteButton, "fa-volume-up", "fa-volume-off");
+    }
+}
+
+function toggleBetweenClasses(el, c1, c2) {
+    el.classList.toggle(c1);
+    el.classList.toggle(c2);
 }

@@ -13,29 +13,6 @@
     <script src="scripts/scripts.js"></script>
     <script src="scripts/home.js"></script>
     <title>FMIFlix</title>
-
-    <script>
-        // Mute/Unmute button:
-        function unmute() {
-            let audio = document.getElementById('troy-video');
-            let muteButton = document.getElementById('mute-button');
-
-            if (audio.mute) {
-                audio.mute = false;
-                document.getElementById('troy-video').muted = false;
-                toggleBetweenClasses(muteButton, "fa-volume-off", "fa-volume-up");
-            } else {
-                audio.mute = true;
-                document.getElementById('troy-video').muted = true;
-                toggleBetweenClasses(muteButton, "fa-volume-up", "fa-volume-off");
-            }
-        }
-
-        function toggleBetweenClasses(el, c1, c2) {
-            el.classList.toggle(c1);
-            el.classList.toggle(c2);
-        }
-    </script>
 </head>
 
 <body>
@@ -50,7 +27,7 @@
             <section class="overlay logo">
                 <img src="images/troy.png" alt="">
             </section>
-            <section class="overlay mute" onclick="unmute()">
+            <section class="overlay mute" id="mute">
                 <i id="mute-button" class="fa fa-volume-off fa-2x"></i>
             </section>
         </div>
