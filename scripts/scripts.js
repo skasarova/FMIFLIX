@@ -1,3 +1,5 @@
+"use strict";
+
 function request(path, callback) {
     var xhr = new XMLHttpRequest();
     xhr.onload  = function () {
@@ -26,7 +28,7 @@ function clearCookie(key){
 }
 
 function redirect(page){
-    window.location.href = window.location.origin + "/FMIFLIX/" + page;
+    window.location.href = page;
 }
 
 function onLogout(){
